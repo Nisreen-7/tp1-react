@@ -1,6 +1,10 @@
-
+import Form from './Components/Form';
 import './App.css';
+import WelcomeFc from './Components/WelcomeFc';
 import Welcome from './Components/Welcome';
+import Product from './Components/Product';
+import Clock from './Components/Clock';
+import Input from './Components/Input';
 
 function App() {
   const Name= 'Louna';
@@ -12,7 +16,10 @@ function App() {
   }
   return (
     <div className="App">
-      {/* <header className="App-header">
+      <Form />
+      {/* <Input label="Saisir votre prenom" type="text" />
+      <Input label="Saisir votre mot de pass" type="password" />
+       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -25,11 +32,18 @@ function App() {
         >
           Learn React
         </a>
-      </header> */}
+      </header> 
+   <Clock />
       <h1 >Hi, React App</h1>
       {greeting(Name)}
-
-      <Welcome name= "Nisreen" age="36" carieer="Dev"/>
+      
+      <WelcomeFc name= "Nisreen" age="36" carieer="Dev"/>
+      <WelcomeFc name= "Abd" age="20" carieer="Dentist"/>
+      <Welcome name="lalala" />
+      <Product title="velo" description="pour les enfant" price="30 €" />
+      <Product title="brosse" description="pour les enfant" price="25 €" />
+      <Product title="chaise" description="pour les enfant" price="40 €" />
+      <Product title="trotinette" description="pour les enfant" price="15 €" /> */}
     </div>
   );
 }
